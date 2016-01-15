@@ -1,0 +1,238 @@
+*{
+ font-family: Verdana;   
+}
+body{
+    background-color: #EDEDED;
+}
+.container-narrow{
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1000px;
+}
+
+.col-sm-12{
+		color: black;
+		margin-top: 15px;
+		text-align: center;
+		padding: 20px 0;
+	}
+.title{
+    font-family: Driod Sans;
+    font-size: 50px;
+    top: -50px;
+    display: none;
+    
+}
+
+
+
+
+
+
+
+
+.homepagemenubuttons{
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    padding-top: 20px;
+}
+#execbtn{
+    display: none;
+}
+#pasteventsbtn{
+    display: none;
+}
+#contactusbtn{
+    display: none;
+}
+.menubtnline{
+    position: relative;
+    top: -17px;
+    width: 1px;
+    borer: none;
+    background-color: #0084B0;
+    height: 1px;
+}
+#titlenum{
+    font-size: 43px;
+       
+}
+#aboutustitle{
+    font-family: Century Gothic, sans-serif;
+    display: none;
+}
+#aboutusp{
+    position: relative;
+    display: none;
+}
+.footerdiv{
+    background-color: black;
+    height: 200px;
+}
+.aboutsub{
+    text-align: center;
+}
+
+
+
+.down{
+    position: relative;
+    top: 17px;
+    left: 8px;
+    width: 0;
+    height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-top: 10px solid #0091C2;
+}
+.up{
+    position: relative;
+    top: -17px;
+    left: 8px;
+    width: 0;
+	height: 0;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 10px solid #0091C2;
+    display: none;
+}
+
+.abouth{
+    cursor: pointer;
+    display: none;
+}
+#msp{
+ display: none;
+}
+#tbp{
+    display: none;   
+}
+#gp{
+    display: none;   
+}
+
+
+#footerrow{
+    position: relative;
+    top: 50px;
+}
+#newssub{
+    padding: 3px;
+    outline: none;
+    border: 1px solid black;
+    border-bottom: 1px solid white;
+    background-color: black;
+    color: white;
+    width:250px;
+}
+
+::-webkit-input-placeholder { /* Safari, Chrome and Opera */
+  color: #EBEBEB;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #EBEBEB;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #EBEBEB;
+}
+
+
+
+/*footer*/
+#joinuslink{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: Century Gothic, sans-serif;
+    border: 1px solid white;
+    padding: 2px;
+    position: relative;
+    top: 10px;
+}
+#joinuslink:hover{
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+}
+.socialmedialink{
+    color: white;
+    font-size: 15px;
+    text-decoration-color: white;
+    position: relative;
+    margin-top: 10px;
+}
+.socialmedialink:hover{
+    color: dodgerblue;
+}
+#twitter-icon{
+    position: relative;
+    top: 10px;
+}
+#facebook-icon{
+    position: relative;
+    left: -14px;
+    top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*pastevents page*/
+#timeevents{
+    font-family: Verdana;
+}
+#titlehr{
+    height: 1px;
+    width: 1px;
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*navbar*/
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+.navbar li { color: #000; }
+ul.nav a {color: grey !important;}
+.navbar-header{ color: grey !important; }
+ul.nav a:hover { color: black !important; }
+.navbar-header a:hover { color: black !important; }
+
+
+.navbar-toggle{
+    border: none;
+    height: 40px;
+}
+
+.navbar-collapse{border: none;}
+
+#navbarcoltitle:hover{
+    background-color: transparent;
+}
+#navbarcolmenu{
+    background-color: transparent;
+}
+#navbarcolmenu:hover{
+    background-color: transparent;
+}
