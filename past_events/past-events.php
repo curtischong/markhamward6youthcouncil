@@ -36,34 +36,48 @@
                     window.clearTimeout(hrwidthtimer);
                 }
             });
-        
-            
-            
-            
-            
-           /*  $.ajax({
-                type:'POST',
-                 data:{ 
-                                  "email": "hi"
-                                },
-                url: "retrieve-past-events.php";
-                success: function(response){
-                    alert(response);
-                }
-            });*/
-            
-            
-            
+                 $.ajax({
+                    type:'POST',
+                     data:{ 
+                         "email": "hi"
+                    },
+                    url: "retrieve-past-events.php",
+                    success: function(docinfo){
+                        infoparsed = JSON.parse(docinfo)
+                        var arraylength = infoparsed.length;
+                        var numofrows = arraylength/3;
+                        numofrows = Math.ceil(numofrows);
+                        
+                        for(var a=0;a < numofrows; a++){
+                            $("#past-events-container").append('<div class="row-fluid">hi</div>');
+                        }
+                        
+                        
+                        
+                        alert(numofrows);
+                    }
+                });
             });
             
         </script>
-    <div class="container-narrow">
+    <div class="container-narrow" id="past-events-containter">
         <div class="col-sm-12">
             <div class="row-fluid">
                 <h1 class="title">Past Events</h1>
             </div>
             <div class="row-fluid">
                 <hr id="titlehr">
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-4">
+
             </div>
         </div>
     </div>
