@@ -31,7 +31,6 @@
                                 },
                             success: function(response){
                                 $("#newssub").val("");
-                                alert(response);
                                 $("#newssub").attr("placeholder",response);
                             }
                         });

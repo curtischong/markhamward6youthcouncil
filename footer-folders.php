@@ -20,6 +20,20 @@
                        $("#newssub").attr("placeholder","Please give us your email!");
                        
                        
+                    }else{
+                       //if the user submits an email address
+                        var email = $("#newssub").val();
+                        $.ajax({
+                            type:'POST',
+                            url: "../add-newsletter.php",
+                            data:{ 
+                                  "email": email
+                                },
+                            success: function(response){
+                                $("#newssub").val("");
+                                $("#newssub").attr("placeholder",response);
+                            }
+                        });
                     }
                 }
             }
@@ -36,9 +50,9 @@
                             <a id="joinuslink" href="https://docs.google.com/a/gapps.yrdsb.ca/forms/d/1gsaRADIE13jMRuqH3RJobpfK13ks6Tvxg9Lrgr2nNNs/viewform?c=0&w=1" target="_blank">Join us</a>
                         </div>
                         <div class="col-sm-4">
-                            <a id="twitter-icon" href="https://twitter.com/MW6YouthCouncil?ref_src=twsrc%5Etfw" target="_blank" class="socialmedialink"><img src="twitter-button.png" width="28px" height="28px"/>@MW6YouthCouncil</a>
+                            <a id="twitter-icon" href="https://twitter.com/MW6YouthCouncil?ref_src=twsrc%5Etfw" target="_blank" class="socialmedialink"><img src="../twitter-button.png" width="28px" height="28px"/>@MW6YouthCouncil</a>
                             <br>
-                            <a id="facebook-icon" href="https://www.facebook.com/w6ycmkm/?fref=ts" target="_blank" class="socialmedialink"><img src="facebook-button.png" width="28px" height="28px"/> Markham W6YC</a>
+                            <a id="facebook-icon" href="https://www.facebook.com/w6ycmkm/?fref=ts" target="_blank" class="socialmedialink"><img src="../facebook-button.png" width="28px" height="28px"/> Markham W6YC</a>
                         </div>
                     </div>
                 </div>

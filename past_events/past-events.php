@@ -36,7 +36,26 @@
                     window.clearTimeout(hrwidthtimer);
                 }
             });
-        });   
+        
+            
+            
+            
+            
+           /*  $.ajax({
+                type:'POST',
+                 data:{ 
+                                  "email": "hi"
+                                },
+                url: "retrieve-past-events.php";
+                success: function(response){
+                    alert(response);
+                }
+            });*/
+            
+            
+            
+            });
+            
         </script>
     <div class="container-narrow">
         <div class="col-sm-12">
@@ -48,6 +67,6 @@
             </div>
         </div>
     </div>
-        <?php include 'footer.php';?>
+        <?php include '../footer-folders.php';?>
     </body>
 </html>

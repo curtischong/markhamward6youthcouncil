@@ -48,6 +48,6 @@
             </div>
         </div>
     </div>
-        <!--include footer .php-->
+       <?php include '../footer-folders.php'; ?>
     </body>
 </html>
