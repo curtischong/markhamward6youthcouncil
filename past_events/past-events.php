@@ -24,7 +24,12 @@
         <script>
         $(document).ready(function(){
             
-
+            //replace all function
+            function replaceAll(str, find, replace){
+                return str.replace(new RegExp(find, 'g'), replace);
+            };
+            
+            //animations
             $(".title").fadeIn(600);
             var hrwidthtimer = window.setInterval(function () {
                 
@@ -36,6 +41,8 @@
                     window.clearTimeout(hrwidthtimer);
                 }
             });
+            
+                //get the php code to run
                  $.ajax({
                     type:'POST',
                      data:{ 
@@ -48,13 +55,27 @@
                         var numofrows = arraylength/3;
                         numofrows = Math.ceil(numofrows);
                         
+                        //append the retrieved file names onto the page
+                        var currentevent = 0;
                         for(var a=0;a < numofrows; a++){
-                            $("#past-events-container").append('<div class="row-fluid">hi</div>');
+                            //place rows
+                            $("#past-events-container").append('<div class="row-fluid"></div>');
+                            
+                            //place colums
+                            for(currenteventnum = 0;currenteventnum <3; currenteventnum++){
+                                if(infoparsed[currentevent] !== undefined){
+                                    
+                                    //replace the _ in the titles with spaces
+                                    infoparsed[currentevent] = replaceAll(infoparsed[currentevent],"_"," ");
+                                    
+                                    $("#past-events-container").last().append('<div class="col-sm-4"><div class="row-fluid">'+infoparsed[currentevent]+'</div></div>');
+                                    currentevent = currentevent+1;
+                                }
+                            }
                         }
                         
                         
                         
-                        alert(numofrows);
                     }
                 });
             });
@@ -69,16 +90,12 @@
                 <hr id="titlehr">
             </div>
         </div>
-        <div class="row-fluid">
-            <div class="col-sm-4">
-
-            </div>
-            <div class="col-sm-4">
-
-            </div>
-            <div class="col-sm-4">
-
-            </div>
+        <div id="past-events-container">
+        
+        
+        
+        
+        
         </div>
     </div>
         <?php include '../footer-folders.php';?>
