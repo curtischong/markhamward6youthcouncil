@@ -65,7 +65,7 @@
                             for(currenteventnum = 0;currenteventnum <3; currenteventnum++){
                                 if(infoparsed[currentevent] !== undefined){
                                     
-                                    //replace the _ in the titles with spaces
+                                    //replace the _ in the titles with spaces 
                                     infoparsed[currentevent] = replaceAll(infoparsed[currentevent],"_"," ");
                                     
                                     $("#past-events-container").last().append('<div class="col-sm-4"><div class="row-fluid">'+infoparsed[currentevent]+'</div></div>');
