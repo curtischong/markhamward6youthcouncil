@@ -1,0 +1,6 @@
+note:
+
+when creating new events, make sure that the folder system is like the way it is (the underscore and hyphen system)
+
+all new events are from descnding order from 9999
+the photos have to be .jpg ones

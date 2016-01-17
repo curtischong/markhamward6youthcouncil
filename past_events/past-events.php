@@ -62,13 +62,16 @@
                             $("#past-events-container").append('<div class="row-fluid"></div>');
                             
                             //place colums
-                            for(currenteventnum = 0;currenteventnum <3; currenteventnum++){
+                            for(currenteventnum = 0;currenteventnum < 3; currenteventnum++){
                                 if(infoparsed[currentevent] !== undefined){
                                     
                                     //replace the _ in the titles with spaces 
-                                    infoparsed[currentevent] = replaceAll(infoparsed[currentevent],"_"," ");
-                                    
-                                    $("#past-events-container").last().append('<div class="col-sm-4"><div class="row-fluid">'+infoparsed[currentevent]+'</div></div>');
+                                    var eventname = replaceAll(infoparsed[currentevent],"_"," ");
+                                    var eventarray = eventname.split("-");
+                                    var photolink = infoparsed[currentevent].split("-");
+                                    var photourl = infoparsed[currentevent].substring(5,infoparsed[currentevent].length);
+                                    $("#past-events-container").last().append('<div class="col-sm-4"><div class="row-fluid"><img src="'+infoparsed[currentevent]+'/'+photourl+'-title.jpg"></div></div>');
+                                    //alert(infoparsed[currentevent]);
                                     currentevent = currentevent+1;
                                 }
                             }
