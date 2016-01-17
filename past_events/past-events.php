@@ -70,7 +70,10 @@
                                     var eventarray = eventname.split("-");
                                     var photolink = infoparsed[currentevent].split("-");
                                     var photourl = infoparsed[currentevent].substring(5,infoparsed[currentevent].length);
-                                    $("#past-events-container").last().append('<div class="col-sm-4"><div class="row-fluid"><img src="'+infoparsed[currentevent]+'/'+photourl+'-title.jpg"></div></div>');
+                                    $("#past-events-container").last().append('<div class="col-sm-4"><div class="row-fluid"><div class="thumbnailcon"><div class="thumbnail"></div></div></div></div>');
+                                    $("#past-events-container").last().children().children().children().children().style.backgroundImage="url("+infoparsed[currentevent]+"/"+photourl+"-title.jpg)";
+                                    //$("#past-events-container").last().append('<div class="col-sm-4"><div class="row-fluid"><div class="thumbnailcon"><div class="thumbnail" style="background-image: url("'+infoparsed[currentevent]+'/'+photourl+'-title.jpg"></div></div></div></div>');
+                                    //<img src="'+infoparsed[currentevent]+'/'+photourl+'-title.jpg">
                                     //alert(infoparsed[currentevent]);
                                     currentevent = currentevent+1;
                                 }
