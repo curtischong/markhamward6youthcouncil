@@ -54,13 +54,12 @@
                         var arraylength = infoparsed.length;
                         var numofrows = arraylength/3;
                         numofrows = Math.ceil(numofrows);
-                        
                         //append the retrieved file names onto the page
                         var currentevent = 0;
                         for(var a=0;a < numofrows; a++){
                             //place rows
                             $("#past-events-container").append('<div class="row-fluid"></div>');
-                            
+                            //alert(a);
                             //place colums
                             for(currenteventnum = 0;currenteventnum < 3; currenteventnum++){
                                 if(infoparsed[currentevent] !== undefined){
@@ -70,15 +69,20 @@
                                     var eventarray = eventname.split("-");
                                     var photolink = infoparsed[currentevent].split("-");
                                     var photourl = infoparsed[currentevent].substring(5,infoparsed[currentevent].length);
-                                    $("#past-events-container").last().append('<div class="col-sm-4"><div class="row-fluid"><div class="thumbnailcon"><div class="thumbnail"></div></div></div></div>');
-                                    $("#past-events-container").last().children().children().children().children().style.backgroundImage="url("+infoparsed[currentevent]+"/"+photourl+"-title.jpg)";
-                                    //$("#past-events-container").last().append('<div class="col-sm-4"><div class="row-fluid"><div class="thumbnailcon"><div class="thumbnail" style="background-image: url("'+infoparsed[currentevent]+'/'+photourl+'-title.jpg"></div></div></div></div>');
-                                    //<img src="'+infoparsed[currentevent]+'/'+photourl+'-title.jpg">
-                                    //alert(infoparsed[currentevent]);
+                                    
+                                    //append the html elements
+                                    $("#past-events-container").children().last().append('<div class="col-sm-4"><div class="row-fluid thumbnailphoto"><div class="thumbnailcon"><div class="thumbnail"></div></div></div><div class="row-fluid thumbnailtitle"><a href="'+infoparsed[currentevent]+'/'+photourl+'.php"><h4></h4></a></div></div>');
+                                    //add the photo
+                                    $("#past-events-container").children().last().children().last().children(".thumbnailphoto").children().children().css("background-image","url(/markhamward6youthcouncil/past_events/"+infoparsed[currentevent]+'/'+photourl+"-title.jpg)");
+                                    //add the date of the event
+                                    $("#past-events-container").children().last().children().last().children(".thumbnailtitle").children().children().html(eventarray[3]+" <br><h6>("+eventarray[2] + " "+eventarray[1]+")</h6>");
                                     currentevent = currentevent+1;
                                 }
                             }
                         }
+                        
+                        //fade in the event container
+                        $("#past-events-container").fadeIn(1300);
                     }
                 });
             });
