@@ -71,9 +71,9 @@
                                     var photourl = infoparsed[currentevent].substring(5,infoparsed[currentevent].length);
                                     
                                     //append the html elements
-                                    $("#past-events-container").children().last().append('<div class="col-sm-4"><div class="row-fluid thumbnailphoto"><div class="thumbnailcon"><div class="thumbnail"></div></div></div><div class="row-fluid thumbnailtitle"><a href="'+infoparsed[currentevent]+'/'+photourl+'.php"><h4></h4></a></div></div>');
+                                    $("#past-events-container").children().last().append('<div class="col-sm-4"><div class="row-fluid thumbnailphoto"><div class="thumbnailcon"><a href="'+infoparsed[currentevent]+'/'+photourl+'.php"><div class="thumbnail"></div></a></div></div><div class="row-fluid thumbnailtitle"><a href="'+infoparsed[currentevent]+'/'+photourl+'.php"><h4></h4></a></div></div>');
                                     //add the photo
-                                    $("#past-events-container").children().last().children().last().children(".thumbnailphoto").children().children().css("background-image","url(/markhamward6youthcouncil/past_events/"+infoparsed[currentevent]+'/'+photourl+"-title.jpg)");
+                                    $("#past-events-container").children().last().children().last().children(".thumbnailphoto").children().children().children().css("background-image","url(/markhamward6youthcouncil/past_events/"+infoparsed[currentevent]+'/'+photourl+"-title.jpg)");
                                     //add the date of the event
                                     $("#past-events-container").children().last().children().last().children(".thumbnailtitle").children().children().html(eventarray[3]+" <br><h6>("+eventarray[2] + " "+eventarray[1]+")</h6>");
                                     currentevent = currentevent+1;
