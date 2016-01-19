@@ -47,6 +47,13 @@
                 <hr id="titlehr">
             </div>
         </div>
+        <div class="row-fluid">
+            <div class="col-sm-10 col-sm-offset-1">
+                <div class="imagecon">
+                    <div class="image image-december-2015-caroling_for_cans"></div>
+                </div>
+            </div>
+        </div>
     </div>
        <?php include '../../footer-folders-folders.php'; ?>
     </body>
