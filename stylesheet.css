@@ -21,10 +21,17 @@ body{
     font-size: 50px;
     top: -50px;
     display: none;
-    
 }
-
-
+.othertitle{
+    position: relative;
+}
+#othertitlehr{
+    positon: relative;
+    height: 1px;
+    width: 1px;
+    background-color: black;
+    margin-top: -50px;
+}
 
 
 
@@ -232,11 +239,15 @@ body{
     width: 100%;
     height: 100%;
     background-size: cover;
+    display: none;
 }
 .image-december-2015-caroling_for_cans{
     background-image: url("past_events/9994-2015-December-Caroling_for_Cans/2015-December-Caroling_for_Cans-title.jpg");
 }
-
+.pasteventheader{
+    text-align: center;
+    color: black;
+}
 
 
 

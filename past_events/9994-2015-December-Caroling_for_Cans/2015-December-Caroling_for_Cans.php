@@ -20,18 +20,18 @@
         <link rel="stylesheet" type="text/css" href="../../stylesheet.css"/>
     </head>
     <body>
-            <?php include '../../navbar.php';?>
+            <?php include '../../navbar-folders.php';?>
         <script>
         $(document).ready(function(){
             
-
+            $(".image").fadeIn(800);
             $(".title").fadeIn(600);
             var hrwidthtimer = window.setInterval(function () {
                 
-                var hrwidth = $("#titlehr").width();
+                var hrwidth = $("#othertitlehr").width();
                 
                 if(hrwidth< 200){
-                    $('#titlehr').css("width",hrwidth+1);
+                    $('#othertitlehr').css("width",hrwidth+1);
                 }else{
                     window.clearTimeout(hrwidthtimer);
                 }
@@ -41,10 +41,10 @@
     <div class="container-narrow">
         <div class="col-sm-12">
             <div class="row-fluid">
-                <h1 class="title">Caroling With Cans</h1>
+                <h1 class="title othertitle">Caroling With Cans</h1>
             </div>
             <div class="row-fluid">
-                <hr id="titlehr">
+                <hr id="othertitlehr">
             </div>
         </div>
         <div class="row-fluid">
@@ -52,6 +52,14 @@
                 <div class="imagecon">
                     <div class="image image-december-2015-caroling_for_cans"></div>
                 </div>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="col-sm-12">
+                <h3 class="pasteventheader">What It Is</h3>
+            </div>
+            <div class="col-sm-12">
+                <h3 class="pasteventheader">What It Is</h3>
             </div>
         </div>
     </div>

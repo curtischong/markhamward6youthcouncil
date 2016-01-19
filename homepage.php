@@ -221,7 +221,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
     <div class="container-narrow"> 
         <div class="row-fluid">
             <div class="col-sm-12">
-                    <h1 class="title">Markham Ward <span id="titlenum">1</span> Youth Council</h1>
+                    <h1 class="title" style="padding-top: 35px;">Markham Ward <span id="titlenum">1</span> Youth Council</h1>
             </div>
         </div>
         <div class="row-fluid" style="height: 222px;">
