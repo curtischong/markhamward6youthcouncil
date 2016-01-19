@@ -17,10 +17,10 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         
-        <link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
+        <link rel="stylesheet" type="text/css" href="../../stylesheet.css"/>
     </head>
     <body>
-            <?php include '../navbar.php';?>
+            <?php include '../../navbar.php';?>
         <script>
         $(document).ready(function(){
             
@@ -41,13 +41,13 @@
     <div class="container-narrow">
         <div class="col-sm-12">
             <div class="row-fluid">
-                <h1 class="title">Our Executive Team</h1>
+                <h1 class="title">Caroling With Cans</h1>
             </div>
             <div class="row-fluid">
                 <hr id="titlehr">
             </div>
         </div>
     </div>
-       <?php include '../footer-folders.php'; ?>
+       <?php include '../../footer-folders-folders.php'; ?>
     </body>
 </html>
