@@ -224,7 +224,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                     <h1 class="title" style="padding-top: 35px;">Markham Ward <span id="titlenum">1</span> Youth Council</h1>
             </div>
         </div>
-        <div class="row-fluid" style="height: 222px;">
+        <div class="row-fluid" style="height: 257px;">
             <div class="col-sm-4">
                   <div id="execbtn" class="homepagemenubuttons">Our Executive Team</div>
             </div>

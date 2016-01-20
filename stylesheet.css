@@ -222,7 +222,12 @@ body{
 #past-events-container{
     display: none;
 }
-
+.pasteventdescriptionp{
+   /* text-align: center;*/
+    position: relative;
+    top: -40px;
+    display: none;
+}
 
 
 

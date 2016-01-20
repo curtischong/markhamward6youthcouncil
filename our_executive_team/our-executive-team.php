@@ -28,10 +28,10 @@
             $(".title").fadeIn(600);
             var hrwidthtimer = window.setInterval(function () {
                 
-                var hrwidth = $("#titlehr").width();
+                var hrwidth = $("#othertitlehr").width();
                 
                 if(hrwidth< 200){
-                    $('#titlehr').css("width",hrwidth+1);
+                    $('#othertitlehr').css("width",hrwidth+1);
                 }else{
                     window.clearTimeout(hrwidthtimer);
                 }
@@ -41,10 +41,10 @@
     <div class="container-narrow">
         <div class="col-sm-12">
             <div class="row-fluid">
-                <h1 class="title">Our Executive Team</h1>
+                <h1 class="title othertitle">Our Executive Team</h1>
             </div>
             <div class="row-fluid">
-                <hr id="titlehr">
+                <hr id="othertitlehr">
             </div>
         </div>
     </div>

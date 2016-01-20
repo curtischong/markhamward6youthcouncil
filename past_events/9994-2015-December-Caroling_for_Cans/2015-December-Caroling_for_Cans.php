@@ -26,6 +26,7 @@
             
             $(".image").fadeIn(800);
             $(".title").fadeIn(600);
+            $(".pasteventdescriptionp").fadeIn(600);
             var hrwidthtimer = window.setInterval(function () {
                 
                 var hrwidth = $("#othertitlehr").width();
@@ -58,8 +59,10 @@
             <div class="col-sm-12">
                 <h3 class="pasteventheader">What It Is</h3>
             </div>
+        </div>
+        <div class="row-fluid">
             <div class="col-sm-12">
-                <h3 class="pasteventheader">What It Is</h3>
+                <p class="pasteventdescriptionp">Ho Ho Ho! on December 2015, Markham Youth Council had hosted an event wher ewe go door to door caroling for cans to donate to the Markham Food Drive!</p>
             </div>
         </div>
     </div>
