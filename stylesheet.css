@@ -252,7 +252,27 @@ body{
 .pasteventheader{
     text-align: center;
     color: black;
+    display: none;
 }
+
+/*blockquote styles*/
+.bq1 {
+    padding-left: 16px;
+    padding-top: 1px;
+    border-left: 5px solid #577da4;
+    width: 700px;
+}
+.bq1 p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8c8785;
+}
+
+
+
+
+
 
 
 
