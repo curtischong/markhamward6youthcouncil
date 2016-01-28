@@ -15,11 +15,8 @@
                         }, 100);
                        setTimeout(function() {
                             $("#newssub").css("background-color","black");
-                        }, 150);
-                       
+                        }, 150);                     
                        $("#newssub").attr("placeholder","Please give us your email!");
-                       
-                       
                     }else{
                        //if the user submits an email address
                         var email = $("#newssub").val();
