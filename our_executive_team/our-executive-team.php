@@ -48,7 +48,14 @@
             </div>
         </div>
         <div class="row-fluid" id="execphotocon">
-        
+            <div class="row-fluid">
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-3">
+                </div>
+                <div class="col-sm-3">
+                </div>
+            </div>
         </div>
     </div>
        <?php include '../footer-folders.php'; ?>
