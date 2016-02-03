@@ -48,8 +48,14 @@
             </div>
         </div>
         <div class="row-fluid" id="execphotocon">
+            <!--the photos for the staff memebers will be placed below-->
             <div class="row-fluid">
                 <div class="col-sm-3">
+                    <div class="row">
+                    </div>
+                    <div class="row">
+                        <h5 class="execname"></h5>
+                    </div>
                 </div>
                 <div class="col-sm-3">
                 </div>
